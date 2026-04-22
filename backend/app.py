@@ -1,6 +1,9 @@
 from flask import Flask, jsonify, request
 import os
 import datetime
+from dotenv import load_dotenv
+load_dotenv()
+
 
 app = Flask(__name__)
 
@@ -16,4 +19,8 @@ def home():
 
 
 if '__main__' == __name__:
-    app.run(host="0.0.0.0")
+    app.run(
+        host="0.0.0.0", 
+        debug=True,
+        port=int(os.getenv("PORT", 5000))
+    )
