@@ -1,11 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+// imports
+import Logout from './components/logins/Logout.vue';
+import Login from './components/logins/Login.vue';
+
+import Home from './pages/Home.vue';
+
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <Home />
 </template>
 
 <style scoped></style>
