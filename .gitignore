@@ -105,3 +105,8 @@ cython_debug/
 
 # ignore the clean.sh file
 clean.sh
+
+
+
+# ignore the .flaskenv file
+.flaskenv
